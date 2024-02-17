@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+  background-color: #39445A;
+}
+
+.header-component {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 65px;
+  padding: 15px 0;
+  background-color: #39445A;
+  color: white;
+  box-shadow: 0 2px 5px black;
+  text-transform: uppercase;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  cursor: pointer;
+
+  img {
+    width: 80px;
+    margin: 0 30px;
+    transform: translateY(-5px);
+  }
+}
+
+.page-title {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+}
+
+.content-page {
+  margin: 20px 0 80px 0;
+
+  .all-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 20px 0;
+  }
+
+  .contend-modal {
+    width: 19%;
+    cursor: pointer;
+    transition: 0.5s linear;
+    margin-bottom: 20px;
+    background-color: white;
+
+    &:hover {
+      box-shadow: 10px 10px 10px black;
+      transform: scale(1.01);
+    }
+  }
+
+  .card-header {
+    padding: 8px 8px 0 8px;
+    position: relative;
+    border: none;
+  }
+
+  .card-body {
+    text-align: center;
+    padding: 8px 16px;
+    border: none;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .overlay {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #3F51B5;
+    padding: 2px 8px;
+    color: white;
+    border-radius: 20px;
+  }
+
+  .overlay-warning {
+    background-color: #ff58f4;
+  }
+
+  .overlay-danger {
+    background-color: crimson;
+  }
+}
+
+.pagination {
+  button, div {
+    color: white;
+  }
+}
+
+.search-page {
+  margin-top: 20px;
+
+  .search-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+    height: 70px;
+    background-color: #4B5569;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    color: white;
+    font-size: 22px;
+    padding-left: 20px;
+
+    &:focus {
+      background-color: #4B5569;
+      outline: none;
+      box-shadow: none;
+      border: none;
+      color: white;
+    }
+
+    &::placeholder {
+      color: white;
+    }
+  }
+
+  .searchBtn {
+    width: 70px;
+    height: 70px;
+    border: none;
+
+    svg {
+      transform: scale(1.5);
+    }
+  }
+
+  .search-tab {
+    margin-top: 8px;
+
+    button {
+      color: white;
+    }
+  }
+
+  .MuiTabs-indicator {
+    background-color: white;
+  }
+}
+
+.modal-title {
+  font-size: 50px;
+  color: white;
+}
+
+.modal-overview {
+  border: 2px dashed white;
+  margin: 20px 0;
+  height: 200px;
+  padding: 15px;
+  font-size: 20px;
+  color: white;
+  overflow-y: auto;
+}
+
+.modal-youtube-link {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: crimson;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+}
